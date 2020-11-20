@@ -100,7 +100,8 @@ https://github.com/garethcull/forecastr/blob/master/static/js/forecastr_v4.js#L1
 
 1. Clone this repo and make sure you have docker installed.
 2. Cd into cloned folder and run: docker build -t forecastr:latest .  
-3. Run: docker run --rm -it forecastr
+3. Run:  docker run --rm -it -p 5000:5000 forecastr      
+4. Go to your browser under: https://localhost:5000
 
 #### Blog Post on what I Learned Building a UI on top of Facebook Prophet
 https://www.garethcull.com/2019/03/20/what-i-learned-building-a-ui-on-top-of-facebook-prophet/
