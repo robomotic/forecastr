@@ -16,6 +16,7 @@ RUN pip install pystan
 RUN pip install fbprophet
 RUN pip install pandas
 RUN pip install gunicorn
+
 RUN pip install -r requirements.txt
 RUN pip freeze
 
@@ -29,4 +30,5 @@ RUN chmod +x boot.sh
 ENV FLASK_APP app.py
 
 EXPOSE 5000
+
 ENTRYPOINT ["./boot.sh"]
